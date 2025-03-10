@@ -7,3 +7,5 @@ for i in range(1, 11):
     number = int(input("Enter a number: "))
     if number % 2 != 0:
         odd_numbers.append(number)
+
+print(f"There are {len(odd_numbers)} odd numbers in the list.")
