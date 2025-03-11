@@ -8,3 +8,7 @@ for i in range(10):
     input_number = int(input("Enter number: "))
     numbers_list.append(input_number)
 
+print("The Numbers without duplicate are:")
+for number in numbers_list:
+    if numbers_list.count(number) == 1:
+        print(number)
