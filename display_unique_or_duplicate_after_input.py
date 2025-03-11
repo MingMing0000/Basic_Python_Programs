@@ -9,3 +9,9 @@ while True:
     except ValueError:
         break
 
+#Display "Unique" or "Duplicate" after input
+for numbers in number_list:
+    if number_list.count(numbers) > 1:
+        print(f"{numbers}:Duplicate")
+    else:
+        print(f"{numbers}:Unique")
