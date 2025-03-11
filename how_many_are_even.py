@@ -1,7 +1,7 @@
 #Create a program that ask user to input 10 numbers. Print how many are even numbers.
 
 print("how many are even numbers")
-print("Enter 10 numbers: ")
+print("Enter 10 numbers")
 
 even_numbers_count = 0
 for i in range(10):
