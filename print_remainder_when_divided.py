@@ -4,3 +4,6 @@ print("The remainder when the first number is divided by the second number")
 
 first_number = int(input("Enter the first number: "))
 second_number = int(input("Enter the second number: "))
+
+remainder = first_number % second_number
+print(f"The remainder when the first number is divided by the second number is {remainder}")
