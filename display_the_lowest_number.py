@@ -9,3 +9,6 @@ while True:
         number_list.append(number)
     except ValueError:
         break
+
+#Display the lowest number
+print(f"The lowest number is {min(number_list)}")
