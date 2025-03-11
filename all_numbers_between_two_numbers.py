@@ -6,5 +6,6 @@ print("Enter two numbers to get all the numbers between them")
 First_number = int(input("Enter first number: "))
 Second_number = int(input("Enter second number: "))
 
+print(f"Numbers between {First_number} and {Second_number} are:")
 for i in range(First_number+1, Second_number):
   print(i)
