@@ -9,3 +9,7 @@ while True:
         number_list.append(number)
     except ValueError:
         break
+
+#Display the number from lowest to highest
+number_list.sort()
+print("The numbers from lowest to highest:", number_list)
