@@ -6,3 +6,5 @@ print("Enter two numbers:")
 First_number = int(input("Enter first number: "))
 Second_number = int(input("Enter second number: "))
 
+for i in range(First_number+1, Second_number):
+  print(i)
