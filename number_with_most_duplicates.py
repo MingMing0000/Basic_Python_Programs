@@ -12,9 +12,12 @@ while True:
         break
 
 #Create a list to store the numbers that have duplicate
-duplicate_list = []
+duplicate_list = set()
 
 #Check if the number has duplicate
 for i in range(len(numbers_list)):
     if numbers_list.count(numbers_list[i]) > 1:
-        duplicate_list.append(numbers_list[i])
+        duplicate_list.add(numbers_list[i])
+
+#Display the number with the most number of duplicate
+print("Number with the most number of duplicate: ", max(duplicate_list))
