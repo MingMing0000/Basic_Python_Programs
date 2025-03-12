@@ -11,3 +11,7 @@ while True:
         numbers_list.append(number_input)
     except:
         break
+
+#Display the number from highest to lowest
+numbers_list.sort(reverse=True)
+print("Number from highest to lowest: ", numbers_list)
