@@ -10,3 +10,6 @@ while True:
         numbers_list.append(number_input)
     except:
         break
+
+#Display the highest number
+print("\nHighest number: ", max(numbers_list))
