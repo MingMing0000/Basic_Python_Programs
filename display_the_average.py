@@ -11,3 +11,7 @@ while True:
         numbers_list.append(number_input)
     except:
         break
+
+#Display the average
+average = sum(numbers_list) / len(numbers_list)
+print("Average: ", average)
