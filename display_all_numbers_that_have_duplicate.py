@@ -7,3 +7,11 @@ numbers_list = []
 for i in range(10):
     number_input = int(input("Enter a number: "))
     numbers_list.append(number_input)
+
+#Create a list to store the numbers that have duplicate
+duplicate_list = []
+
+#Check if the number has duplicate
+for i in range(10):
+    if numbers_list.count(numbers_list[i]) > 1:
+        duplicate_list.append(numbers_list[i])
