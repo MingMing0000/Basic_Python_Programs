@@ -1,5 +1,6 @@
 #Create a program that ask user to input a number, continue asking until the user input is invalid. Display the highest number
 
+print("Display the highest number")
 #Create a list to store the numbers
 numbers_list = []
 
