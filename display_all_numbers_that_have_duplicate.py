@@ -15,3 +15,6 @@ duplicate_list = []
 for i in range(10):
     if numbers_list.count(numbers_list[i]) > 1:
         duplicate_list.append(numbers_list[i])
+
+#Display the numbers that have duplicate
+print("Numbers that have duplicate: ", duplicate_list)
