@@ -8,3 +8,6 @@ for i in range(10):
     number = int(input("Enter a number: "))
     if number % 2 == 0:
         even_numbers_count += 1
+
+#diplay the even numbers count
+print("There are", even_numbers_count, "even numbers.")
