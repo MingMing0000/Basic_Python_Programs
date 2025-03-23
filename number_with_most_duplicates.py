@@ -1,23 +1,21 @@
 # Create a program that ask user to input a number, continue asking until the user input is invalid. Display the number with the most number of duplicate.
 
 #Create a list to store the numbers
-numbers_list = []
-
+numbers_list = {}
 #Ask user to input a number
 while True:
     try:
         number_input = int(input("Enter a number: "))
-        numbers_list.append(number_input)
+        if number_input in numbers_list:
+            numbers_list[number_input] += 1
+        else:
+            numbers_list[number_input] = 1
     except:
         break
 
-#Create a list to store the numbers that have duplicate
-duplicate_list = set()
-
-#Check if the number has duplicate
-for i in range(len(numbers_list)):
-    if numbers_list.count(numbers_list[i]) > 1:
-        duplicate_list.add(numbers_list[i])
-
-#Display the number with the most number of duplicate
-print("Number with the most number of duplicate: ", max(duplicate_list))
+#Find and display the number with the most number of duplicate
+most_duplicate = max(numbers_list.values())
+for number, count in numbers_list.items():
+    if count == most_duplicate:
+        print("Number with the most number of duplicate: ", number)
+        break
