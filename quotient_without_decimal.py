@@ -8,4 +8,4 @@ second_number = float(input("Enter the second number: "))
 quotient = first_number // second_number
 result = int(quotient)
 
-print(f"The quotient of the two numbers is {quotient}")
+print(f"The quotient of the two numbers is {result}")
