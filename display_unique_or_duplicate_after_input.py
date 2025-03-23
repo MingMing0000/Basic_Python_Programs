@@ -6,7 +6,7 @@ while True:
     try:
         number = int(input("Enter a number: "))
         number_list.append(number)
-    except ValueError:
+    except:
         break
 
 #Display "Unique" or "Duplicate" after input
